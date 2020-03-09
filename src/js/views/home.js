@@ -1,6 +1,7 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
+import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<div className="container">
@@ -12,11 +13,13 @@ export const Home = () => (
 		</div>
 		<div className="card-columns">
 			<div className="card">
-				<img
-					src="https://emilia.lekoarts.de/static/a40e525ac7c6809bb4237eea5a758e36/0797f/Reflections.webp"
-					className="card-img-top"
-					alt="..."
-				/>
+				<Link to="section1">
+					<img
+						src="https://emilia.lekoarts.de/static/a40e525ac7c6809bb4237eea5a758e36/0797f/Reflections.webp"
+						className="card-img-top"
+						alt="..."
+					/>
+				</Link>
 			</div>
 			<div className="card">
 				<img
